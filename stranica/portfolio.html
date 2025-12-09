@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Kovačić – Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="page">
+
+    <header>
+        <div class="logo">Luka Kovačić</div>
+
+        <nav id="navMenu">
+            <a href="index.html">Početna</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main class="page-content">
+        <h1>Portfolio</h1>
+        <p class="page-intro">
+            Ovdje će biti prikaz mojih ključnih projekata: stroj za automatsko pakiranje borovnica,
+            robotski griper za Klimaopremu, auto na daljinsko upravljanje, luksomat, CAD modeli itd.
+        </p>
+
+        <!-- Ovdje kasnije dodaj grid kartica projekata -->
+        <div class="projects-grid">
+            <article class="project-card">
+                <h2>Stroj za automatsko pakiranje borovnica</h2>
+                <p>
+                    Završni rad – razvoj kompletnog mehatroničkog sustava (mehanika, pneumatika,
+                    električna instalacija, PLC upravljanje, HMI).
+                </p>
+                <span class="project-tag">INOVA · ARCA – zlatna medalja</span>
+            </article>
+
+            <article class="project-card">
+                <h2>Robotski griper za požarne zaklopke</h2>
+                <p>
+                    Natječaj Klimaopreme – razvoj koncepta robotskog hvataljka za manipulaciju zaklopki,
+                    optimiziran za automatiziranu proizvodnju.
+                </p>
+                <span class="project-tag">Nagrada za inovativnost i kreativnost</span>
+            </article>
+        </div>
+    </main>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
