@@ -1,26 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <title>Luka Kovačić</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111827;
-            color: #f9fafb;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        h1 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luka Kovačić — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Luka Kovačić - test</h1>
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Na vrh">KOVA</a>
+
+      <nav class="nav" aria-label="Glavna navigacija">
+        <a href="#about" data-target="about">O MENI</a>
+        <a href="#projects" data-target="projects">PROJEKTI</a>
+        <a href="#awards" data-target="awards">NAGRADE</a>
+        <a href="#contact" data-target="contact">KONTAKT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO (16:9 slide) -->
+    <section class="slide slide-hero" id="hero" aria-label="Uvod">
+      <div class="frame16x9">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="hero-lock">
+                <div class="eyebrow">POZDRAV, JA SAM</div>
+                <h1 class="hero-name">Luka Kovačić</h1>
+                <div class="hero-sub">STUDENT MEHATRONIKE I ROBOTIKE</div>
+
+                <div class="hero-cta">
+                  <a class="cta-link" href="#" target="_blank" rel="noopener">ŽIVOTOPIS</a>
+                  <a class="cta-link" href="#projects">PORTFOLIO</a>
+                </div>
+            </div>
+            </div>
+
+
+          <div class="hero-right">
+            <!-- stavi svoju sliku bez pozadine: profilna.png -->
+            <img class="hero-photo" src="assets/luka.png" alt="Luka Kovačić" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O MENI (16:9 slide) -->
+    <section class="slide slide-white" id="about" aria-label="O meni">
+      <div class="frame16x9 frame-pad about-grid">
+        <h2 class="h2-accent">O meni</h2>
+        <div class="about-text">
+          <p>
+            Student sam FSB-a (Mehatronika i robotika) i najviše me zanimaju sustavi koji spajaju
+            mehaniku, elektroniku i softver u jednu funkcionalnu cjelinu. Volim raditi projekte “od nule”
+            — od konstrukcije i izbora komponenti do upravljanja i testiranja.
+          </p>
+          <p class="muted">
+            Fokus: industrijska automatizacija (PLC/HMI), prototipiranje, senzori i komunikacija (TCP/IP).
+          </p>
+        </div>
+        <div>
+          <h2 class="h2-dark">Tehničke vještine</h2>
+          <ul class="list">
+            <li>PLC/HMI (Mitsubishi), digitalni/analogni signali</li>
+            <li>Senzori, I/O, instrumentacija</li>
+            <li>Pneumatika (cilindri, razvodnici), sigurnost</li>
+            <li>CAD + nacrti, prototipiranje</li>
+            <li>3D print (PETG) funkcionalnih dijelova</li>
+            <li>Python + osnove web-a, TCP/IP</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="h2-dark">Društvene vještine</h2>
+          <ul class="list">
+            <li>Vođenje projekta od ideje do prototipa</li>
+            <li>Komunikacija s mentorima i sponzorima</li>
+            <li>Prezentiranje i demonstracija rada</li>
+            <li>Dokumentiranje i tehničko pisanje</li>
+            <li>Planiranje i iteracije</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO (flow – raste po sadržaju) -->
+    <section class="section-flow" id="projects" aria-label="Projekti">
+      <div class="container">
+        <h2 class="h2-accent">Portfolio</h2>
+
+        <div class="project-row">
+          <img class="project-img" src="assets/cad_stroja_page-0001.jpg" alt="Stroj za automatsko pakiranje borovnica" />
+          <div class="project-meta">
+            <div class="project-title">STROJ ZA AUTOMATSKO PAKIRANJE BOROVNICA</div>
+            <div class="project-year">2025</div>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <img class="project-img" src="assets/cad_stroja_page-0001.jpg" alt="Stroj za automatsko pakiranje borovnica" />
+          <div class="project-meta">
+            <div class="project-title">STROJ ZA AUTOMATSKO PAKIRANJE BOROVNICA</div>
+            <div class="project-year">2025</div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a class="btn" href="#">VIDI VIŠE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAGRADE (16:9 slide) -->
+    <section class="slide slide-white" id="awards" aria-label="Nagrade">
+      <div class="frame16x9 frame-pad awards-grid">
+        <div class="award-photo-wrap">
+          <img class="award-photo" src="assets/ja_medalja_inova.jpg" alt="Fotografija s nagradom" />
+        </div>
+
+        <div>
+          <h2 class="h2-accent">Nagrade</h2>
+
+          <div class="table">
+            <div class="t-row">
+              <div class="t-left">INOVA</div>
+              <div class="t-mid">2025</div>
+              <div class="t-right">ZLATNA MEDALJA</div>
+            </div>
+            <div class="t-row">
+              <div class="t-left">ARCA</div>
+              <div class="t-mid">2025</div>
+              <div class="t-right">ZLATNA MEDALJA</div>
+            </div>
+            <div class="t-row">
+              <div class="t-left">KIDA TAIWAN</div>
+              <div class="t-mid">2025</div>
+              <div class="t-right">ZLATNA MEDALJA</div>
+            </div>
+            <div class="t-row">
+              <div class="t-left">KLIMAOPREMA</div>
+              <div class="t-mid">2025</div>
+              <div class="t-right">1. MJESTO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT (16:9 slide) -->
+    <section class="slide slide-white" id="contact" aria-label="Kontakt">
+      <div class="frame16x9 frame-pad contact-grid">
+        <div>
+          <h2 class="h2-accent big-accent">Radi<br/>samnom</h2>
+
+          <div class="contact-lines">
+            <div class="line-row">
+              <div class="line-label">ADRESA</div>
+              <div class="line-value">Zagreb, Hrvatska</div>
+            </div>
+            <div class="line-row">
+              <div class="line-label">BROJ MOBITELA</div>
+              <div class="line-value">(+385) 00 000 000</div>
+            </div>
+            <div class="line-row">
+              <div class="line-label">EMAIL ADRESA</div>
+              <div class="line-value">luka@email.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-photo-wrap">
+          <img class="contact-photo" src="assets/profilna.jpg" alt="Luka Kovačić" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Luka Kovačić
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
